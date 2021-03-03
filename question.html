@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icon.png" type="image/gif" sizes="16x16">
+    <title>Quiz App by Kamran</title>
+</head>
+<body onload="displayQuestions(0)">
+    <div class="container ques">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                  <div class="card mx-auto" style="max-width: 80%;">
+                    <h5 class="card-header bg-theme text-black">Quiz by Kamran</h5>
+                    <div class="card-body">
+                        <h5 class="card-title mb-4" id="questionoptions">Q1. The correct answer of the equation, 2 + 2 is</h5>
+                        
+                        <p  class="card-text options" onclick="activeclass(this)"> option</p>
+                        <hr>
+                        <p  class="card-text options"  onclick="activeclass(this)"> option</p>
+                        <hr>
+                        <p class="card-text options"  onclick="activeclass(this)"> option</p>
+                        <hr>
+                        <p class="card-text options"  onclick="activeclass(this)"> option</p>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="#"  class="btn  float-right text-black" id="nextbtn"  onclick="nextTask()">Next ></a>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
